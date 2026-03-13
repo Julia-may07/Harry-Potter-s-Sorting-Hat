@@ -38,7 +38,7 @@ def exibir_historico_e_pontuacao():
         print(f"\nErro ao ler ou processar o arquivo de resultados: {e}")
         return
 
-    # --- Exibe o Histórico Detalhado ---
+    # Exibe o Histórico Detalhado 
     print("\n================================================")
     print("=== HISTÓRICO DE CLASSIFICAÇÕES DO CHAPÉU SELETOR ===")
     if historico:
@@ -48,7 +48,7 @@ def exibir_historico_e_pontuacao():
         print("Nenhum resultado foi salvo ainda.")
     print("================================================")
 
-    # --- Exibe o Placar Total ---
+    # Exibe o Placar Total 
     print("\n====== PLACAR TOTAL DAS CASAS (Contagem de Alunos) ======")
     # Ordena as casas por pontuação (do maior para o menor)
     casas_ordenadas = sorted(pontuacao_total.items(), key=lambda item: item[1], reverse=True)
@@ -139,7 +139,7 @@ def selecionar_casa(perguntas_list, jogador_nome):
     else:
         print("O resultado não foi salvo pois a casa não foi decidida.")
 
-# --- Início da Execução Principal ---
+#Início da Execução Principal 
 
 # Pergunta se o usuário quer ver os resultados antes de começar, e exibe o histórico e placar total
 opcao = input("Deseja ver o Histórico e Placar Total de testes anteriores (S/N)? ").strip().upper()
